@@ -168,10 +168,12 @@ img {
 }
 .botton--primary {
   background-color: var(--forth);
+  border-radius: 10px;
 }
 
 .botton--secondary {
   background-color: var(--third);
+  border-radius: 10px;
 }
 
 .courses {
