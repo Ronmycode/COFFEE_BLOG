@@ -153,12 +153,18 @@ img {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
+  border: none;
 }
 
 @media (min-width: 768px) {
   .botton {
     display: inline-block;
   }
+}
+
+.botton:hover {
+  cursor: pointer;
+  background-color: var(--second);
 }
 .botton--primary {
   background-color: var(--forth);
@@ -176,9 +182,9 @@ img {
   border-bottom: 2px solid var(--second);
   margin-bottom: 2rem;
 }
-/* .widget-course:last-of-type {
+/* .course:last-of-type {
   border: none;
-  margin-bottom: 0;
+  border-bottom: 2px SOLID RED;
 } */
 .widget-courses__label {
   font-family: var(--headingFont);
@@ -207,4 +213,64 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
+}
+
+/* Courses and workshops */
+.course {
+  padding: 3rem 0;
+  border-bottom: 2px solid var(--second);
+}
+
+@media (min-width: 768px) {
+  .course {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
+}
+.course:last-of-type {
+  border: none;
+}
+.course__label {
+  font-family: var(--headingFont);
+  font-weight: bold;
+}
+.course__info {
+  font-weight: normal;
+}
+
+.course__label,
+.widget-course__info {
+  font-size: 2rem;
+}
+
+/* Contact */
+
+.contact-bg {
+  background-image: url(../img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  background-color: var(--first);
+  margin: -10rem auto 0 auto;
+  width: 90%;
+  padding: 5rem;
+}
+.field {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.field__label {
+  flex: 0 0 9rem;
+  -ms-flex-align: right;
+}
+.field__field {
+  flex: 1;
+  border: 1px solid var(--second);
+}
+.field__field--textarea {
+  height: 20rem;
 }
